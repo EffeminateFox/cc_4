@@ -39,14 +39,39 @@ class EV extends Car {
   }
 }
 
-// 4 Tests EV class methods with different operations.
-// Test Data for Tesla Car: A 'Tesla' starting at 120 km/h, with a battery charge of 23%.
+// 4A Initializes EV class methods with different operations, A 'Tesla' starting at 120 km/h, with a battery charge of 23%.
 
 const car1 = new EV('Tesla', 120, 23);
 
-// Test the methods
-car1.accelerate(); // Tesla going at 140 km/h, with a charge of 22%
-car1.brake(); // Tesla going at 135 km/h
-car1.chargeBattery(50); // Charge battery to 50%
-console.log(`Battery charged to ${car1.charge}%`); // Battery charged to 50%
-car1.accelerate(); // Tesla going at 155 km/h, with a charge of 49%
+// 4B Dynamic testing
+console.log(`Initial state: ${car1.make} at ${car1.speed} km/h with a charge of ${car1.charge}%`);
+
+console.log('Accelerating...');
+car1.accelerate(); 
+console.log(` ${car1.make} going at ${car1.speed} km/h, with a charge of ${car1.charge}%`);
+
+console.log('Braking...');
+car1.brake();
+console.log(` ${car1.make} going at ${car1.speed} km/h`);
+
+console.log('Charging battery to 50%...');
+car1.chargeBattery(50); 
+console.log(` ${car1.make} battery charged to ${car1.charge}%`);
+
+console.log('Accelerating again...');
+car1.accelerate(); 
+console.log(` ${car1.make} going at ${car1.speed} km/h, with a charge of ${car1.charge}%`);
+
+console.log('Braking again...');
+car1.brake(); 
+console.log(` ${car1.make} going at ${car1.speed} km/h`);
+
+console.log('Charging battery to 100%...');
+car1.chargeBattery(100); 
+console.log(` ${car1.make} battery charged to ${car1.charge}%`);
+
+console.log('Accelerating...');
+car1.accelerate(); 
+console.log(` ${car1.make} going at ${car1.speed} km/h, with a charge of ${car1.charge}%`);
+
+console.log('Final state:', car1);
