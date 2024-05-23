@@ -48,30 +48,23 @@ console.log(`Initial state: ${car1.make} at ${car1.speed} km/h with a charge of 
 
 console.log('Accelerating...');
 car1.accelerate(); 
-console.log(` ${car1.make} going at ${car1.speed} km/h, with a charge of ${car1.charge}%`);
 
 console.log('Braking...');
 car1.brake();
-console.log(` ${car1.make} going at ${car1.speed} km/h`);
 
 console.log('Charging battery to 50%...');
 car1.chargeBattery(50); 
-console.log(` ${car1.make} battery charged to ${car1.charge}%`);
 
 console.log('Accelerating again...');
 car1.accelerate(); 
-console.log(` ${car1.make} going at ${car1.speed} km/h, with a charge of ${car1.charge}%`);
 
 console.log('Braking again...');
 car1.brake(); 
-console.log(` ${car1.make} going at ${car1.speed} km/h`);
 
 console.log('Charging battery to 100%...');
 car1.chargeBattery(100); 
-console.log(` ${car1.make} battery charged to ${car1.charge}%`);
 
 console.log('Accelerating...');
 car1.accelerate(); 
-console.log(` ${car1.make} going at ${car1.speed} km/h, with a charge of ${car1.charge}%`);
 
 console.log('Final state:', car1);
